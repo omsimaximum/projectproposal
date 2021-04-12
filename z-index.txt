@@ -1,0 +1,6 @@
+.nav  10
+
+header 20
+
+welcome text 5
+welcome footer 7
