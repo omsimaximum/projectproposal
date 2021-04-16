@@ -17,20 +17,20 @@ const copyright = document.getElementById('copyright');
 
 
 
-// window.onload = function () {
+window.onload = function () {
      
-//      document.body.style.overflow = 'hidden';
-//      container.style.display = 'none';
-//      setTimeout(() => {
-//           document.body.style.overflowY = 'scroll';
-//           const loader = document.querySelector('.loader-wrapper');
-//           loader.classList.toggle('fade-out');
-//           container.style.display = 'block';
-//           setTimeout(() => {
-//                loader.remove();
-//           }, 1000);
-//      }, 5000);
-// };
+     document.body.style.overflow = 'hidden';
+     container.style.display = 'none';
+     setTimeout(() => {
+          document.body.style.overflowY = 'scroll';
+          const loader = document.querySelector('.loader-wrapper');
+          loader.classList.toggle('fade-out');
+          container.style.display = 'block';
+          setTimeout(() => {
+               loader.remove();
+          }, 1000);
+     }, 5000);
+};
 
 
 
