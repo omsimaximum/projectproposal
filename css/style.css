@@ -30,6 +30,7 @@ body {
   width: 100%;
   min-height: 100vh;
   transition: 0.5s;
+  /*display: none; */
 }
 /* NAVIGATION */
 .nav {
@@ -85,7 +86,7 @@ header {
   margin-top: 20px;
   color: white;
   font-family: 'olegos', sans-serif;
-  font-size: 60px;
+  font-size: 40px;
 }
 .menu {
   position: relative;
@@ -142,10 +143,10 @@ header {
   color: #e3e3e3;
   z-index: 5;
   transition: 0.5s;
+  background-color: black;
 }
 .welcome-text h1 {
-  font-size: 80px;
-  max-width: 800px;
+  font-size: 100px;
 }
 
 .welcome-footer {
@@ -167,8 +168,7 @@ header {
   transform: rotate(270deg);
   border-bottom: 0px solid white;
 }
-#copyright,
-#scroll {
+#copyright {
   transition: 0.5s;
 }
 #copyright:hover {
@@ -215,8 +215,43 @@ section {
   background-color: black;
   color: white;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2px solid white;
+  padding: 30px 5%;
+}
+section h1 {
+  font-size: 50px;
+}
+section p {
+  line-height: 1.5;
+  max-width: 800px;
+  padding: 0 5%;
+}
+section:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+section:nth-child(even) a {
+  color: black;
+}
+section a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid blue;
+  padding: 10px 15px;
 }
 
+footer {
+  height: 30vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* GLOBAL */
 
 #cursor {
@@ -235,14 +270,29 @@ section {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
   .welcome-text h1 {
-    font-size: 55px;
-    max-width: 700px;
-    padding: 0px 7%;
+    font-size: 90px;
+    padding: 0px 50px;
   }
-  .scroll {
-    display: none;
+}
+@media only screen and (max-width: 950px) {
+  .welcome-text h1 {
+    font-size: 80px;
+    padding: 0px 50px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .welcome-text h1 {
+    font-size: 60px;
+    padding: 0px 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .welcome-text h1 {
+    font-size: 50px;
+    padding: 0px 5%;
   }
 }
 
@@ -253,7 +303,7 @@ section {
   }
   .logo a {
     margin-top: 10px;
-    font-size: 45px;
+    font-size: 30px;
   }
   .nav ul li a {
     font-size: 55px;
@@ -261,10 +311,6 @@ section {
 }
 
 @media only screen and (max-width: 550px) {
-  .welcome-text h1 {
-    font-size: 40px;
-    padding: 0px 5%;
-  }
   #copyright {
     font-size: 12px;
   }
@@ -279,7 +325,7 @@ section {
     padding: 10px 10px;
   }
   .logo a {
-    font-size: 30px;
+    font-size: 24px;
   }
   .nav ul li a {
     font-size: 40px;

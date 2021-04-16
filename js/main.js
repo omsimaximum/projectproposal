@@ -14,29 +14,23 @@ const welcomeText = document.getElementById('welcomeText');
 const welcomeFooter = document.querySelector('.welcome-footer');
 const watchVideo = document.getElementById('watch-video');
 const copyright = document.getElementById('copyright');
-const scrollDown = document.getElementById('scroll');
-
-console.log(copyright, scroll);
-
-
-console.log(welcomeTextContainer);
 
 
 
-window.onload = function () {
+// window.onload = function () {
      
-     document.body.style.overflow = 'hidden';
-     container.style.display = 'none';
-     setTimeout(() => {
-          document.body.style.overflowY = 'scroll';
-          const loader = document.querySelector('.loader-wrapper');
-          loader.classList.toggle('fade-out');
-          container.style.display = 'block';
-          setTimeout(() => {
-               loader.remove();
-          }, 1000);
-     }, 5000);
-};
+//      document.body.style.overflow = 'hidden';
+//      container.style.display = 'none';
+//      setTimeout(() => {
+//           document.body.style.overflowY = 'scroll';
+//           const loader = document.querySelector('.loader-wrapper');
+//           loader.classList.toggle('fade-out');
+//           container.style.display = 'block';
+//           setTimeout(() => {
+//                loader.remove();
+//           }, 1000);
+//      }, 5000);
+// };
 
 
 
@@ -55,14 +49,12 @@ document.addEventListener('mousemove', (e) => {
 function hideElem() {
      header.style.opacity = '0';
      welcomeTextContainer.style.opacity = '0';
-     scrollDown.style.opacity = '0';
      copyright.style. opacity = '0';
      watchVideo.innerHTML = 'SKIP';
 }
 function showElem() {
      header.style.opacity = '1';
      welcomeTextContainer.style.opacity = '1';
-     scrollDown.style.opacity = '1';
      copyright.style. opacity = '1';
      watchVideo.innerHTML = 'WATCH VIDEO';
 }
